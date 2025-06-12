@@ -38,7 +38,8 @@ def mergeSort(arr):
 
 
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-plt.plot(range(len(my_list)), my_list)
+fig,ax = plt.subplot()
+ax.plot(range(len(my_list)), my_list)
 mergeSort(my_list)
-plt.plot(range(len(my_list)), my_list)
+ax.plot(range(len(my_list)), my_list)
 plt.show()
